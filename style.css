@@ -30,7 +30,7 @@ html {
 	align-items: center;
 	/* justify-content: center; */
 	white-space: nowrap;
-	text-transform:capitalize ;
+	text-transform: capitalize;
 }
 #purple h1 {
 	font-size: 6vw;
@@ -39,7 +39,7 @@ html {
 	/* animation: slider 0s infinite; */
 }
 @keyframes slider {
-	0%{
+	0% {
 		transform: translateX(0%);
 	}
 
@@ -88,7 +88,7 @@ html {
 	/* gap: 20px; */
 	color: white;
 }
-#nav ul li{
+#nav ul li {
 	cursor: pointer;
 	margin: 0 20px;
 	padding: 2px 0;
@@ -296,6 +296,9 @@ html {
 #page5 .elem img {
 	position: absolute;
 	z-index: 1;
+	top: 50%;
+	left: 0%;
+	height: 300%;
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	pointer-events: none;
@@ -330,8 +333,59 @@ html {
 	color: white;
 }
 /* ############# page6 ################ */
-#page6 {
-	min-height: 100vh;
+footer {
+	min-height: 140vh;
 	width: 100%;
-	background-color: red;
+	background-color: #eebeff;
+	padding: 50px 100px;
+}
+footer #first-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 200px 0;
+}
+footer h1 {
+	font-size: 8vw;
+	font-weight: 500;
+}
+footer a {
+	height: 150px;
+	width: 150px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 50%;
+	color: black;
+	margin-right: 50px;
+	transition: all .5s ease;
+}
+footer a:hover{
+	background-color: black;
+	color:white;
+}
+footer #second {
+	margin-bottom: 90px;
+}
+footer #second h3 {
+	font-weight: 500;
+}
+footer #last {
+	display: flex;
+	gap: 50px;
+}
+footer #last p:first-child {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+footer #last p {
+	font-size: 13px;
+}
+#page6 {
+	height: 1vh;
+	width: 100%;
+	background-color: yellow;
 }

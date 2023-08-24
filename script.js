@@ -67,6 +67,7 @@ function cursor() {
    let p3_img = document.querySelector('#page3  img');
    let p3_video = document.querySelector('#page3  video');
 
+   //img
    p3_img.addEventListener('mouseenter', () => {
       cursor_cir.style.width = "fit-content";
       cursor_cir.textContent = 'VIEW';
@@ -78,6 +79,8 @@ function cursor() {
       cursor_cir.style.cssText = 'height: 17px; width: 17px; left: 0;';
 
    });
+   
+   //video
    p3_video.addEventListener('mouseenter', () => {
       cursor_cir.style.width = "fit-content";
       cursor_cir.textContent = 'VIEW';
@@ -165,6 +168,7 @@ document.querySelectorAll('#page5 .elem').forEach(function (val) {
    val.addEventListener('mousemove', (dets) => {
       var diffY = dets.clientY - val.getBoundingClientRect().top;
       var diffX = dets.clientX - val.getBoundingClientRect().left;
+
       gsap.to(val.querySelector('img'), {
          opacity: 1,
          ease: Power3,
@@ -172,7 +176,9 @@ document.querySelectorAll('#page5 .elem').forEach(function (val) {
          left: diffX,
       });
    });
+
    val.addEventListener('mouseleave', (dets) => {
+
       gsap.to(val.querySelector('img'), {
          opacity: 0,
          ease: Power3,

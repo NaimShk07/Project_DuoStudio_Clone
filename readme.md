@@ -5,7 +5,8 @@
 2. mix-blend-mode: difference;(imp element color change as per bg color)
 3. if (video.muted) is better than if (video.hasAttribute('muted'))
 4. you can only use transform one's, so write code according to that
-5. gsap short hand
+5. cursor_cir.style.*cssText* = 'height: 17px; width: 17px; left: 0;';
+6. gsap short hand
 
    ```
    var tl = gsap.timeline({
